@@ -8,7 +8,7 @@ export function SuperHeroesPage() {
   const [error, setError] = useState('')
 
   useEffect(() => {
-    axios.get<SuperHeroes[]>('http://localhost:4000/superheroesa')
+    axios.get<SuperHeroes[]>('http://localhost:4000/superheroes')
       .then(response => {
         setData(response.data)
       })

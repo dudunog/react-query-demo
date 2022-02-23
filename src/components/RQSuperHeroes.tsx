@@ -4,7 +4,7 @@ import { SuperHeroes } from '../interfaces/super-heroes'
 
 export function RQSuperHeroesPage() {
   const { isLoading, data, isError, error } = useQuery<SuperHeroes[]>('super-heroes', async () => {
-    const response = await axios.get('http://localhost:4000/superheroesa')
+    const response = await axios.get('http://localhost:4000/superheroes')
 
     return response.data
   })
